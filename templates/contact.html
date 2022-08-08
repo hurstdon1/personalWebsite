@@ -2,36 +2,24 @@
 {% block content%}
 
 	<div class="content-section">
-    <h3>Contact Me</h3>
+    <h1>Contact Information</h1>
 
-    <form action="{{ url_for('contact') }}" method=post>
-        <div>
-            <!-- name forms -->
-            <p>
-                {{ form.name.label }} <br>
-                {{ form.name(placeholder='Your name') }}
-            </p>
-            <!-- email forms -->
-            <p>
-                {{ form.email.label }} <br>
-                {{ form.email(placeholder='Your e-mail ...') }}
-            </p>
-            <!-- Subject of your request -->
-            <p>
-                {{ form.subject.label }}<br>
-                {{form.subject(placeholder='Your subject ...')}}
-            </p>
-            <!-- Content of your request -->
-            <p>
-                {{ form.message.label }}<br>
-                {{ form.message(placeholder='write your request ...') }}
-            </p>
-            <!-- Submit button -->
-
-            <p>
-                {{ form.submit }}
-            </p>
+        <div class = "mt-4" >
+            <!-- Linked In-->
+            <h2>LinkedIn - <a href = "https://www.linkedin.com/in/don-hurst-35499a138/"><h4>https://www.linkedin.com/in/don-hurst-35499a138</h4></a></h2>
         </div>
+
+        <div class = "mt-4">
+            <!-- Github-->
+            <h2>Github - <a href = "https://github.com/hurstdon1"><h4>https://github.com/hurstdon1</h4></a></h2>
+        </div>
+
+        <div class = "mt-4">
+            <!-- Email-->
+            <h2>Email - <a href = "mailto: hurstdon1@gmail.com"><h4>HurstDon1@gmail.com</h4></a></h2>
+        </div>
+    
     </form>
-</div>
+    
+    </div>
 {% endblock content %}
